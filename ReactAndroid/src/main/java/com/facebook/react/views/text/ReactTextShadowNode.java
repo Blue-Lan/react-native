@@ -207,11 +207,6 @@ public class ReactTextShadowNode extends ReactBaseTextShadowNode {
   }
 
   @Override
-  public boolean hoistNativeChildren() {
-    return true;
-  }
-
-  @Override
   public void markUpdated() {
     super.markUpdated();
     // Telling to Yoga that the node should be remeasured on next layout pass.
